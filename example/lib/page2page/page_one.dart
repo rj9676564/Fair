@@ -29,7 +29,7 @@ class _PageOneState extends State<PageOne> {
           onPressed: () {
             Navigator.pushNamed(context, 'fair_page_two', arguments: {
               'path': 'assets/fair/lib_page2page_page_two.fair.json',
-              'data': {'title': 'PageTwo'}
+              'data': {'title': 'PageTwo22222'}
             });
           },
           tooltip: 'Increment',

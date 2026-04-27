@@ -56,32 +56,14 @@
                     "builder": {
                       "className": "Padding",
                       "na": {
-                        "padding": {
-                          "className": "EdgeInsets.only",
-                          "na": {
-                            "left": 24,
-                            "right": 24,
-                            "top": 8,
-                            "bottom": 16
-                          }
-                        },
+                        "padding": null,
                         "child": {
                           "className": "Container",
                           "na": {
                             "child": {
                               "className": "ClipRRect",
                               "na": {
-                                "borderRadius": {
-                                  "className": "BorderRadius.all",
-                                  "pa": [
-                                    {
-                                      "className": "Radius.circular",
-                                      "pa": [
-                                        16.0
-                                      ]
-                                    }
-                                  ]
-                                },
+                                "borderRadius": null,
                                 "child": {
                                   "className": "Stack",
                                   "na": {
@@ -129,14 +111,7 @@
                                                               "child": {
                                                                 "className": "Padding",
                                                                 "na": {
-                                                                  "padding": {
-                                                                    "className": "EdgeInsets.only",
-                                                                    "na": {
-                                                                      "left": 16,
-                                                                      "top": 8,
-                                                                      "bottom": 8
-                                                                    }
-                                                                  },
+                                                                  "padding": null,
                                                                   "child": {
                                                                     "className": "Column",
                                                                     "na": {
@@ -228,12 +203,7 @@
                                                                         {
                                                                           "className": "Padding",
                                                                           "na": {
-                                                                            "padding": {
-                                                                              "className": "EdgeInsets.only",
-                                                                              "na": {
-                                                                                "top": 4
-                                                                              }
-                                                                            },
+                                                                            "padding": null,
                                                                             "child": {
                                                                               "className": "Row",
                                                                               "na": {
@@ -270,13 +240,7 @@
                                                       {
                                                         "className": "Padding",
                                                         "na": {
-                                                          "padding": {
-                                                            "className": "EdgeInsets.only",
-                                                            "na": {
-                                                              "right": 16,
-                                                              "top": 8
-                                                            }
-                                                          },
+                                                          "padding": null,
                                                           "child": {
                                                             "className": "Column",
                                                             "na": {
@@ -342,12 +306,7 @@
                                                   "child": {
                                                     "className": "Padding",
                                                     "na": {
-                                                      "padding": {
-                                                        "className": "EdgeInsets.all",
-                                                        "pa": [
-                                                          8.0
-                                                        ]
-                                                      },
+                                                      "padding": null,
                                                       "child": {
                                                         "className": "Icon",
                                                         "pa": [
@@ -393,5 +352,6 @@
       }
     }
   },
-  "methodMap": {}
+  "methodMap": {},
+  "digest": "6b43e206c7278aeb886971eaf4ccddad"
 }

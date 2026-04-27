@@ -33,7 +33,7 @@
                           "child": {
                             "className": "Text",
                             "pa": [
-                              "拨打电话-基于FairBasicPlugin"
+                              "fair  拨打电话-基于FairBasicPlugin"
                             ]
                           }
                         }
@@ -51,7 +51,7 @@
                           "child": {
                             "className": "Text",
                             "pa": [
-                              "网络请求-基于FairCommonPlugin"
+                              "fair 网络请求-基于FairCommonPlugin"
                             ]
                           }
                         }
@@ -66,5 +66,6 @@
       }
     }
   },
-  "methodMap": {}
+  "methodMap": {},
+  "digest": "0cdacd6a1e3134f3abef805b62fd304a"
 }

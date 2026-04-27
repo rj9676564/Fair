@@ -189,15 +189,7 @@
                                 {
                                   "className": "Padding",
                                   "na": {
-                                    "padding": {
-                                      "className": "EdgeInsets.only",
-                                      "na": {
-                                        "top": 10,
-                                        "left": 15,
-                                        "bottom": 10,
-                                        "right": 10
-                                      }
-                                    },
+                                    "padding": null,
                                     "child": {
                                       "className": "Container",
                                       "na": {
@@ -237,12 +229,7 @@
                                     "child": {
                                       "className": "Padding",
                                       "na": {
-                                        "padding": {
-                                          "className": "EdgeInsets.all",
-                                          "pa": [
-                                            8.0
-                                          ]
-                                        },
+                                        "padding": null,
                                         "child": {
                                           "className": "Column",
                                           "na": {
@@ -336,13 +323,7 @@
                           {
                             "className": "Padding",
                             "na": {
-                              "padding": {
-                                "className": "EdgeInsets.only",
-                                "na": {
-                                  "left": 15.0,
-                                  "right": 15.0
-                                }
-                              },
+                              "padding": null,
                               "child": {
                                 "className": "Container",
                                 "na": {
@@ -376,5 +357,6 @@
       }
     }
   },
-  "methodMap": {}
+  "methodMap": {},
+  "digest": "8fbbc144778cb7f28abf5d3d9d64884d"
 }

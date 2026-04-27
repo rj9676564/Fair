@@ -4,12 +4,12 @@ version: 1.9.0
 homepage: https://fair.58.com/
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=3.0.0 <4.0.0"
 
 #executables:
 #  fairc:
 dependencies:
-  source_gen: ^1.2.2
+  source_gen: ^1.5.0
   build: ^2.1.0
   crypto: ^3.0.1
   build_config: ^1.0.0
@@ -17,24 +17,21 @@ dependencies:
   archive: ^3.3.0
   intl: ^0.17.0
   path: ^1.8.0
-  analyzer: ^5.5.0
+  analyzer: ^6.0.0
   dart_style: ^2.0.0
   glob: ^2.0.1
   pedantic: ^1.11.1
   http: ^0.13.3
   yaml: ^3.0.0
 
-  fair_annotation: ^2.3.0
-#  fair_annotation:
-#    path: ../annotation
+  fair_annotation:
+    path: ../annotation
 
-  fair_dart2dsl: ^1.5.0
-#  fair_dart2dsl:
-#    path: ../dart2dsl
+  fair_dart2dsl:
+    path: ../dart2dsl
 
-  fair_dart2js: ^1.5.0
-#  fair_dart2js:
-#    path: ../dart2js
+  fair_dart2js:
+    path: ../dart2js
 
 #dependency_overrides:
 #  collection: 1.17.0

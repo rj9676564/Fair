@@ -29,10 +29,15 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    namespace 'com.wuba.fair'
+    compileSdkVersion 35
+
+    buildFeatures {
+        buildConfig true
+    }
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         externalNativeBuild {
             cmake {
@@ -102,4 +107,3 @@ android {
 
 dependencies {
 }
-

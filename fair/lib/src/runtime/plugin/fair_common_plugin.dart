@@ -88,6 +88,13 @@ mixin FairCommonPluginMixin {
   /// common request method
   Future<dynamic> request(
     dynamic map,
+    Future<Map?> Function(Map reqData) run,
+  ) =>
+      pluginRequest(map, run);
+
+  /// common request method
+  Future<dynamic> pluginRequest(
+    dynamic map,
     // do your business logic in this call back
     Future<Map?> Function(Map reqData) run,
   ) async {

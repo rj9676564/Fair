@@ -60,17 +60,7 @@
                     "child": {
                       "className": "ClipRRect",
                       "na": {
-                        "borderRadius": {
-                          "className": "BorderRadius.all",
-                          "pa": [
-                            {
-                              "className": "Radius.circular",
-                              "pa": [
-                                4.0
-                              ]
-                            }
-                          ]
-                        },
+                        "borderRadius": null,
                         "child": {
                           "className": "Image.network",
                           "pa": [
@@ -96,5 +86,6 @@
       }
     }
   },
-  "methodMap": {}
+  "methodMap": {},
+  "digest": "6f1ea339ab8d0d694ca0b23830d0d985"
 }

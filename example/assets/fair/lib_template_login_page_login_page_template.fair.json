@@ -29,12 +29,7 @@
               {
                 "className": "Container",
                 "na": {
-                  "margin": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "top": 50
-                    }
-                  },
+                  "margin": null,
                   "child": {
                     "className": "Image.network",
                     "pa": [
@@ -50,12 +45,7 @@
               {
                 "className": "Container",
                 "na": {
-                  "margin": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "top": 20
-                    }
-                  },
+                  "margin": null,
                   "child": {
                     "className": "Text",
                     "pa": [
@@ -77,20 +67,8 @@
               {
                 "className": "Container",
                 "na": {
-                  "margin": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "left": 20,
-                      "right": 20,
-                      "top": 20
-                    }
-                  },
-                  "padding": {
-                    "className": "EdgeInsets.symmetric",
-                    "na": {
-                      "horizontal": 10
-                    }
-                  },
+                  "margin": null,
+                  "padding": null,
                   "decoration": {
                     "className": "BoxDecoration",
                     "na": {
@@ -127,20 +105,8 @@
               {
                 "className": "Container",
                 "na": {
-                  "margin": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "left": 20,
-                      "right": 20,
-                      "top": 10
-                    }
-                  },
-                  "padding": {
-                    "className": "EdgeInsets.symmetric",
-                    "na": {
-                      "horizontal": 10
-                    }
-                  },
+                  "margin": null,
+                  "padding": null,
                   "decoration": {
                     "className": "BoxDecoration",
                     "na": {
@@ -194,14 +160,7 @@
                           }
                         }
                       },
-                      "margin": {
-                        "className": "EdgeInsets.only",
-                        "na": {
-                          "left": 40,
-                          "right": 40,
-                          "top": 20
-                        }
-                      },
+                      "margin": null,
                       "alignment": "#(Alignment.center)",
                       "height": 60,
                       "child": {
@@ -226,12 +185,7 @@
               {
                 "className": "Container",
                 "na": {
-                  "margin": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "top": 30
-                    }
-                  },
+                  "margin": null,
                   "child": {
                     "className": "Text",
                     "pa": [
@@ -253,12 +207,7 @@
               {
                 "className": "Container",
                 "na": {
-                  "margin": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "top": 30
-                    }
-                  },
+                  "margin": null,
                   "child": {
                     "className": "Text",
                     "pa": [
@@ -291,12 +240,7 @@
                   "trueValue": {
                     "className": "Container",
                     "na": {
-                      "margin": {
-                        "className": "EdgeInsets.only",
-                        "na": {
-                          "top": 30
-                        }
-                      },
+                      "margin": null,
                       "child": {
                         "className": "Text",
                         "pa": [
@@ -323,12 +267,7 @@
               {
                 "className": "Container",
                 "na": {
-                  "margin": {
-                    "className": "EdgeInsets.only",
-                    "na": {
-                      "top": 20
-                    }
-                  },
+                  "margin": null,
                   "child": {
                     "className": "Row",
                     "na": {
@@ -407,5 +346,6 @@
       }
     }
   },
-  "methodMap": {}
+  "methodMap": {},
+  "digest": "f2c85d52b23a0eabb64270f733fc2031"
 }

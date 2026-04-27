@@ -9,7 +9,7 @@ import 'package:flutter/widgets.dart';
 import 'internal/error_tips.dart';
 import 'render/decode.dart';
 
-class Loader {
+mixin Loader {
   Decoder? _decoder;
 
   Future<Widget?> parse(BuildContext context,

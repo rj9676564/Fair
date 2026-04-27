@@ -5,17 +5,7 @@
     "child": {
       "className": "ClipRRect",
       "na": {
-        "borderRadius": {
-          "className": "BorderRadius.all",
-          "pa": [
-            {
-              "className": "Radius.circular",
-              "pa": [
-                4.0
-              ]
-            }
-          ]
-        },
+        "borderRadius": null,
         "child": {
           "className": "Stack",
           "na": {
@@ -38,17 +28,7 @@
                     "className": "InkWell",
                     "na": {
                       "splashColor": "#(AppTheme.greyWithOpacity)",
-                      "borderRadius": {
-                        "className": "BorderRadius.all",
-                        "pa": [
-                          {
-                            "className": "Radius.circular",
-                            "pa": [
-                              4.0
-                            ]
-                          }
-                        ]
-                      },
+                      "borderRadius": null,
                       "onTap": "#(callBack)"
                     }
                   }
@@ -60,5 +40,6 @@
       }
     }
   },
-  "methodMap": {}
+  "methodMap": {},
+  "digest": "64a174242555ad03321a5bf34c4aac6f"
 }

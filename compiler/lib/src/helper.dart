@@ -85,31 +85,29 @@ mixin FairCompiler {
   Future<R> compile(BuildStep buildStep, List<String> arguments) async {
     var content = '';
     var error = '';
-    if (LocalProcessManager().canRun(command)) {
-      await _syncFbs(buildStep);
-      try {
-        final output = await dart2dsl.dart2dsl(arguments);
-        if (output != null && output is String && output.isNotEmpty) {
-          final startIndex = output.indexOf(_startTag);
-          final endIndex = output.indexOf(_endTag);
-          if (startIndex != -1 && endIndex != -1) {
-            content = output.substring(startIndex + _startTag.length, endIndex);
-          }
+    await _syncFbs(buildStep);
+    try {
+      final output = await dart2dsl.dart2dsl(arguments);
+      if (output != null && output is String && output.isNotEmpty) {
+        final startIndex = output.indexOf(_startTag);
+        final endIndex = output.indexOf(_endTag);
+        if (startIndex != -1 && endIndex != -1) {
+          content = output.substring(startIndex + _startTag.length, endIndex);
         }
-      } catch (e, s) {
-        var errorLog = await File(path.join('build', 'fair', 'log',
-                '${DateFormat('yyyy-MM-dd_HH:mm:sss').format(DateTime.now())}.txt'))
-            .create(recursive: true);
-        var f = await errorLog.open(mode: FileMode.append);
-        await f
-            .writeString('error:\n${e.toString()}\nstack:\n${s.toString()}\n');
-        error = 'No content is generated: ${errorLog.path}';
-        print('[Fair] $error');
       }
+    } catch (e, s) {
+      var errorLog = await File(path.join('build', 'fair', 'log',
+              '${DateFormat('yyyy-MM-dd_HH:mm:sss').format(DateTime.now())}.txt'))
+          .create(recursive: true);
+      var f = await errorLog.open(mode: FileMode.append);
+      await f
+          .writeString('error:\n${e.toString()}\nstack:\n${s.toString()}\n');
+      error = 'No content is generated: ${errorLog.path}';
+      print('[Fair] $error');
+    }
 
-    } else {
-      error = '[Fair] Please checkout the flutter & dart version';
-      print(error);
+    if (content.isEmpty && error.isEmpty) {
+      error = '[Fair] No content is generated';
     }
     return content.isNotEmpty
         ? R.success(content, 'compile success')

@@ -1,26 +1,7 @@
-/*
- * Copyright (C) 2005-present, 58.com.  All rights reserved.
- * Use of this source code is governed by a BSD type license that can be
- * found in the LICENSE file.
- */
-
-buildscript {
-    ext.kotlin_version = '1.5.31'
-    repositories {
-        google()
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:4.0.0'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
-    }
-}
-
 allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
 }
 
@@ -32,6 +13,6 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
+tasks.register("clean", Delete) {
+    delete rootProject.layout.buildDirectory
 }

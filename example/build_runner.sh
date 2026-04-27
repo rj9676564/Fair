@@ -9,3 +9,7 @@ echo "----- flutter pub get finish -----"
 fvm flutter pub run build_runner build --delete-conflicting-outputs
 
 echo "----- flutter pub run build_runner build finish -----"
+
+rsync -a build/fair/ assets/fair/
+
+echo "----- sync build/fair to assets/fair finish -----"

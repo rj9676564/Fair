@@ -41,12 +41,7 @@
                   {
                     "className": "Container",
                     "na": {
-                      "padding": {
-                        "className": "EdgeInsets.only",
-                        "na": {
-                          "top": 8
-                        }
-                      },
+                      "padding": null,
                       "child": {
                         "className": "Text",
                         "pa": [
@@ -67,12 +62,7 @@
                   {
                     "className": "Container",
                     "na": {
-                      "padding": {
-                        "className": "EdgeInsets.only",
-                        "na": {
-                          "top": 16
-                        }
-                      },
+                      "padding": null,
                       "child": {
                         "className": "Text",
                         "pa": [
@@ -96,12 +86,7 @@
                       "child": {
                         "className": "Padding",
                         "na": {
-                          "padding": {
-                            "className": "EdgeInsets.all",
-                            "pa": [
-                              8.0
-                            ]
-                          },
+                          "padding": null,
                           "child": {
                             "className": "Center",
                             "na": {
@@ -114,17 +99,7 @@
                                     "className": "BoxDecoration",
                                     "na": {
                                       "color": "#(Colors.blue)",
-                                      "borderRadius": {
-                                        "className": "BorderRadius.all",
-                                        "pa": [
-                                          {
-                                            "className": "Radius.circular",
-                                            "pa": [
-                                              4.0
-                                            ]
-                                          }
-                                        ]
-                                      },
+                                      "borderRadius": null,
                                       "boxShadow": [
                                         {
                                           "className": "BoxShadow",
@@ -175,12 +150,7 @@
                                                     {
                                                       "className": "Padding",
                                                       "na": {
-                                                        "padding": {
-                                                          "className": "EdgeInsets.all",
-                                                          "pa": [
-                                                            4.0
-                                                          ]
-                                                        },
+                                                        "padding": null,
                                                         "child": {
                                                           "className": "Text",
                                                           "pa": [
@@ -223,5 +193,6 @@
       }
     }
   },
-  "methodMap": {}
+  "methodMap": {},
+  "digest": "0ad7d3e4f1d1f79c4158b3f0470e9dce"
 }

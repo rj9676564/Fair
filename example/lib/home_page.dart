@@ -1,6 +1,4 @@
-import 'package:example/best_flutter_ui/best_ui_page.dart';
 import 'package:example/public_widget.dart';
-import 'package:example/template/template_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -40,16 +38,6 @@ class HomePage extends StatelessWidget {
                 fairPath:
                     'assets/fair/lib_fair_widget_fair_plugin_widget.fair.json',
               );
-            }),
-            addItem('fair bestUI演示', () {
-              Navigator.of(context).push(CupertinoPageRoute(builder: (_) {
-                return BestUiPage();
-              }));
-            }),
-            addItem('fair 模板代码', () {
-              Navigator.of(context).push(CupertinoPageRoute(builder: (_) {
-                return TemplatePage();
-              }));
             }),
           ],
         ),

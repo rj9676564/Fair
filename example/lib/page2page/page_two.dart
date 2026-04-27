@@ -31,12 +31,12 @@ class _PageTwoState extends State<PageTwo> {
         appBar: AppBar(
           /// 如果需要进行字符串拼接的话，在build()方法里进行拼接即可，不建议在getTitle()
           /// 方法里做字符串拼接
-          title: Text('参数：${getTitle()}'),
+          title: Text('参：${getTitle()}'),
         ),
         body: Container(
             child: Padding(
               padding: EdgeInsets.all(20),
-              child: Text('xxxxx'),
+              child: Text('xxxxx赛凡看看萨拉丁饭领奖看了'),
             )
         ),
     );

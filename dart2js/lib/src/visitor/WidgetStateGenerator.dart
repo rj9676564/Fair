@@ -114,8 +114,8 @@ class WidgetStateGenerator extends RecursiveAstVisitor<WidgetStateGenerator> {
             if (member != null) {
               var expectedStateClassName =
                   ((member as MethodDeclaration).returnType as NamedType)
-                      .name
-                      .name;
+                      .name2
+                      .lexeme;
               if (expectedStateClassName == 'State') {
                 expectedStateClassName = findCreateStateReturn(member.body);
               }

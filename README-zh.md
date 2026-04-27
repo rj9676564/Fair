@@ -66,6 +66,7 @@ dev_dependencies:
   fair_compiler: ^1.7.0
 
 # switch "fair_version" according to the local Flutter SDK version
+# Flutter SDK 3.41.x -> flutter_3_41_0
 # Flutter SDK 3.7.x(3.7.0、3.7.1、3.7.2、3.7.3、3.7.4、3.7.5、3.7.6、3.7.7、3.7.8、3.7.9、3.7.10) -> flutter_3_7_0
 # Flutter SDK 3.3.x(3.3.0、3.3.1、3.3.2、3.3.3、3.3.4、3.3.5、3.3.6、3.3.7、3.3.8、3.3.9、3.3.10) -> flutter_3_3_0
 # Flutter SDK 3.0.x(3.0.0、3.0.1、3.0.2、3.0.3、3.0.4、3.0.5) -> flutter_3_0_0
@@ -76,7 +77,7 @@ dev_dependencies:
 # Flutter SDK 1.22.6 -> flutter_1_22_6
 dependency_overrides:
   fair_version:
-    path: ../fair/flutter_version/flutter_3_7_0
+    path: ../fair/flutter_version/flutter_3_41_0
 ```
 
 **step3：将App替换为FairApp**
@@ -175,6 +176,13 @@ Fair-Online 是面向Flutter 开发者，提供从Flutter 在线开发，到实�
 更多介绍请查看 [文档](./fair_online/README.md)
 
 ## 🔨最近版本
+
+### 3.41.0
+更新时间：2026.04.27
+
+- 适配 Flutter 3.41.0，发布 Fair Version 3.41 版本
+- 全面支持 Dart 3.x 以及现代 Analyzer 6.x
+- 修复了针对已弃用的 Flutter 组件和参数的映射层问题
 
 ### 3.10.0
 更新时间：2023.08.15

@@ -5,7 +5,6 @@ import 'package:example/fair_widget/plugin/fair_basic_plugin.dart';
 import 'package:example/fair_widget/plugin/fair_common_plugin.dart';
 import 'package:example/home_page.dart';
 import 'package:fair/fair.dart';
-import 'package:fair_extension/fair_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -34,14 +33,11 @@ void main() async {
       },
       generated: g.FairAppModule(),
     ),
-
-    ///需要在此注册需要全局使用的plugin,key名可以随意不做要求
-      plugins: FairExtension.plugins
-        ..addAll({
-          'FairBasicPlugin': FairBasicPlugin(),
-          'FairCommonPlugin': FairCommonPlugin(),
-        }),
-      jsPlugins: FairExtension.jsPlugins);
+    plugins: {
+      'FairBasicPlugin': FairBasicPlugin(),
+      'FairCommonPlugin': FairCommonPlugin(),
+    },
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -52,8 +48,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomePage(),
-        navigatorKey: FairExtension.fairNavigatorKey);
+        home: HomePage());
   }
 }
 

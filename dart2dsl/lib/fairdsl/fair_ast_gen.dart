@@ -288,7 +288,11 @@ class CustomAstVisitor extends SimpleAstVisitor<Map> {
 
   @override
   Map visitNamedType(NamedType node) {
-    return _buildTypeName(node.name.name);
+    var name = node.name2.lexeme;
+    if (node.importPrefix != null) {
+      name = '${node.importPrefix!.name.lexeme}.$name';
+    }
+    return _buildTypeName(name);
   }
 
   /// 当前记录的return语句深度
@@ -356,16 +360,14 @@ class CustomAstVisitor extends SimpleAstVisitor<Map> {
   @override
   Map? visitInstanceCreationExpression(InstanceCreationExpression node) {
     Map? callee;
-    if (node.constructorName.type.name is PrefixedIdentifier) {
-      var prefixedIdentifier = node.constructorName.type.name as PrefixedIdentifier;
-      callee = {
-        'type': 'MemberExpression',
-        'object': _visitNode(prefixedIdentifier.prefix),
-        'property': _visitNode(prefixedIdentifier.identifier),
-      };
+    var type = node.constructorName.type;
+    if (type.importPrefix != null) {
+      callee = _buildPrefixedIdentifier(
+        _buildIdentifier(type.name2.lexeme),
+        _buildIdentifier(type.importPrefix!.name.lexeme),
+      );
     } else {
-      //如果不是simpleIdentif 需要特殊处理
-      callee = _visitNode(node.constructorName.type.name);
+      callee = _buildIdentifier(type.name2.lexeme);
     }
     return _buildMethodInvocation(callee, null, _visitNode(node.argumentList));
   }

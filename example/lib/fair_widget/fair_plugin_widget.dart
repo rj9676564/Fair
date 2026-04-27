@@ -26,13 +26,13 @@ class _FairPluginWidgetState extends State<FairPluginWidget> {
                 alignment: Alignment.center,
                 child: ElevatedButton(
                     onPressed: callPhone,
-                    child: Text('拨打电话-基于FairBasicPlugin')),
+                    child: Text('fair  拨打电话-基于FairBasicPlugin')),
               ),
               Container(
                 alignment: Alignment.center,
                 child: ElevatedButton(
                     onPressed: commonHttp,
-                    child: Text('网络请求-基于FairCommonPlugin')),
+                    child: Text('fair 网络请求-基于FairCommonPlugin')),
               ),
             ],
           ),
