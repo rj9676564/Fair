@@ -10,7 +10,7 @@ import 'package:fair_online/editor/services/dartservices.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
-import 'package:qr_flutter/qr_flutter.dart';
+import 'package:qr_flutter/qr_flutter.dart' as qr_flutter;
 import 'package:url_launcher/url_launcher.dart';
 
 typedef OnSubmit = void Function(String appId, String bundle, String patchUrl);
@@ -121,11 +121,11 @@ class QrCodeDialogState extends State<QrCodeDialog> {
                           : _patchUrl.isNotEmpty
                               ? Container(
                                   margin: EdgeInsets.only(top: 50),
-                                  child: QrImage(
+                                  child: qr_flutter.QrImage(
                                     backgroundColor: Colors.white,
                                     foregroundColor: theme.accent1,
                                     data: _patchUrl,
-                                    version: QrVersions.auto,
+                                    version: qr_flutter.QrVersions.auto,
                                     size: 250,
                                     gapless: false,
                                   ),

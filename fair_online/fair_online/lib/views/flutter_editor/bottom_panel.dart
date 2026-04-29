@@ -57,7 +57,7 @@ class BottomPanel extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(left: 10, right: 20),
-            child: Text("Based on Flutter 3.3.0 Dart SDK 2.18.0"),
+            child: Text("Based on Flutter 3.41.7 Dart SDK 3.9.0"),
           )
         ],
       ),

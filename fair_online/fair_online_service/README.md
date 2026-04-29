@@ -33,7 +33,7 @@ Flutter pub get
 To run the server, run:
 
 ```bash
-$ FLUTTER_VERSION="3.3.0" grind serve
+$ FLUTTER_VERSION="3.41.7" fvm dart run grinder serve
 ```
 
 The server will run from port 8082.

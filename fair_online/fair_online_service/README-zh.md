@@ -30,7 +30,7 @@ flutter pub get
 启动 Server :
 
 ```bash
-$ FLUTTER_VERSION="3.3.0" grind serve
+$ FLUTTER_VERSION="3.41.7" fvm dart run grinder serve
 ```
 
 后端服务运行在8082端口。
